@@ -4,20 +4,23 @@ Table of Contents
 
  - [Introduction](#introduction)
  - [Objective](#objective)
+ - [Prerequisites](#prerequisites)
  - [Installation](#installation)
+ - [Running Application using $stdin](#running-application-using-$stdin)
+ - [Running Application using ARGV](#running-application-using-argv)
  - [Docker](#docker)
  - [Running Tests](#running-tests)
  - [TroubleShooting](#troubleshooting)
  - [What I would do next, with given more time?](#what-i-would-do-next-with-given-more-time)
  - [Known Bugs/Issues](#known-bugsissues)
- - [Conclusion](#conclusion)
+ - [Related Resources](#related-resoirces)
 
 
 ## Introduction
-    Hello my name is Amy Newland and I have 2 years of experience with Ruby on Rails, JavaScript, Docker, decent exposure to React. I am creating this application to become the next new Relic at New Relic. The interview process has been wonderful. I have really enjoy communicating with everyone and learning along the way and super excited to see what I will learn during my time at New Relic. I am excited to get to know the rest of the team. Thank you for you time.
+	Hello my name is Amy Newland and I have 2 years of experience with Ruby on Rails, JavaScript, Docker, decent exposure to React. I am creating this application to become the next new Relic at New Relic. The interview process has been wonderful. I have really enjoy communicating with everyone and learning along the way and super excited to see what I will learn during my time at New Relic. I am excited to get to know the rest of the team. Thank you for you time.
 
 ## Objective
-    Create a command line executable program that takes given text(s) and outputs list of first 100 most common three word sequences in descending order.
+	Create a command line executable program that takes given text(s) and outputs list of first 100 most common three word sequences in descending order.
 
 ## Prerequisites
 	- Minimum Ruby version 2.7.6
@@ -46,7 +49,6 @@ Table of Contents
 	* Run using:
 		- Will run test suite as well when running this command if require is uncommented at bottom of word_sequence_finder.rb
 		`docker run -it amy-newland-code-challenge`
-
 
 ## Running Tests
 	* Tests can be run manually by running:
