@@ -36,7 +36,6 @@ class WordSequenceFinderTest < Test::Unit::TestCase
   end
 
   def test_handleing_urls
-    # Not a proper test, Does remove all puncuation but not valid if we are wanting to retain the urls for a seperate case.
     input = "I love http://coding-challenge.com"
     expected_output = [[["i", "love", "httpcoding-challengecom"], 1]]
     assert_equal expected_output, WordSequenceFinder.new(input).most_common_sequences

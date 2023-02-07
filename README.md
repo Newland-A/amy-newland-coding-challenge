@@ -41,7 +41,10 @@ Table of Contents
 	`ruby ./wordsequencefinder.rb text(s)_file.rb `
 
 ## Docker
-	The extra credit Docker requirement was achieved by providing a Dockerfile that can be used for building a Docker image and running the app within a Docker container.
+	The extra credit Docker requirement was achieved by providing a Dockerfile that can be used for building a Docker image
+	and running the app within a Docker container. I have included the two example texts 'moby-dick.txt and brothers-karamazov.txt
+	under test_texts folder. Before running the following commands if there is other text you wish to run please add them to the
+	test_texts folder. The text should be added before the image is built.
 
 	** Make sure Docker is running locally
 	* Build image using:
@@ -65,14 +68,14 @@ Table of Contents
 	* Determine what we want to do with the text once we have collected it and make sure to cover those cases.
 	* Cover how to handle when arugments are not passed to:
 		`ruby file_name arg*` via stdin or ARGV
-	* Determine how I can make the output more interesting to the reader?
+	* Make out interesting to work with (colorization, seperation of file outputs)
 	* Make application more secure in taking in input
 
 ## Known Bugs/Issues
-   * When entering text make sure to enter either ARGV using file_name text_file_to_evaluate or stdin using
-			`cat file_name or text | word_sequence_finder.rb`
-			- Issue if neither are entered it will freeze in terminal and ctrl + c will need to be entered to escape and try again
-			- Does not cover urls www.code-challenge.com or https://code-challenge.com, If we want to retain these urls for another purpose
+  * When entering text either ARGV using file_name text_file_to_evaluate or stdin using
+		`cat file_name or text | word_sequence_finder.rb`
+		- Issue if neither are entered it will freeze in terminal and ctrl + c will need to be entered to escape and try again
+	* When urls are used `www.code-challenge.com or https://code-challenge.com` end result is `wwwcode-challengecom or httpscode-challengecom
 
 ## Related Resources
 	- https://ruby-doc.org/3.2.0/Hash.html#method-i-fetch
