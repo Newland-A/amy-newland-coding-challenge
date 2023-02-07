@@ -1,5 +1,5 @@
 # Uncomment this line to run the specs manually
-require_relative '../word_sequence_finder.rb'
+# require_relative '../word_sequence_finder.rb'
 require 'test/unit'
 
 class WordSequenceFinderTest < Test::Unit::TestCase

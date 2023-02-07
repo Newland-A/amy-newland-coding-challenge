@@ -68,7 +68,6 @@ end
 
 time_end = Time.now
 puts "Total Time: #{time_end - time_start}!"
-# puts "\n\n\n Next section is the test suite!"
 puts "\n\n\n Next section is the test suite!"
 
 # Comment this line to run specs manually without creating redefined methods
