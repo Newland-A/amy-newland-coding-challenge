@@ -74,24 +74,35 @@
 ## TroubleShooting
  	* Container not running ruby word_sequence_finder and test suite. Double check the image has been built.
 		- By running previous commands from [Docker](#docker) section
+	**Update** NO LONGER VALID - if no input is passed currently will return with error and usage notes
 	* Incase input is not passed to ruby file_name command ctrl+c and re-enter comamnd with text
 
 ## What I would do next, with given more time?
 	* Determine if the way I setup the tests to run is the actual best practice way of accomplishing the task.
 	* Write more tests and that better cover edge cases and more scenarios.
+		- Update:
+			- test added to show output for non-ASCII characters
+			- test added to show output for ' when used as quotes
 	* Determine what we want to do with the text once we have collected it and make sure to cover those cases.
 	* Cover how to handle when arugments are not passed to:
 		`ruby file_name arg*` via stdin or ARGV
-	* Make out interesting to work with (colorization, seperation of file outputs)
+		- Update:
+			Added error with instructions on how input should be entered
+	* Make output interesting to work with (colorization, seperation of file outputs)
 	* Make application more secure in taking in input
 
 ## Known Bugs/Issues
+	**FIXED IN LATEST PUSH**
+		- Will now return an error if no input was given with comments on how to enter input
   * When entering text either ARGV using file_name text_file_to_evaluate or stdin using
 		`cat file_name or text | word_sequence_finder.rb`
 		- No text argument terminal will stall use `ctrl + c` then enter commands with text argument
+
 	* When urls are used `www.code-challenge.com or https://code-challenge.com` outputs
 		`wwwcode-challengecom or httpscode-challengecom`
 
 ## Related Resources
 	- https://ruby-doc.org/3.2.0/Hash.html#method-i-fetch
 	- https://rubydoc.info/stdlib/core/Enumerable:each_cons
+
+For better clairty for updating readme I would have removed the bits that have been fixed and added a version number with bug/updates section. In this case since I am not using versions I have left them in original locations with comments.
