@@ -12,7 +12,8 @@
  - [TroubleShooting](#troubleshooting)
  - [What I would do next, with given more time?](#what-i-would-do-next-with-given-more-time)
  - [Known Bugs/Issues](#known-bugsissues)
- - [Related Resources](#related-resoirces)
+ - [Related Resources](#related-resources)
+ - [Updates](#updates)
 
 
 ## Introduction
@@ -106,3 +107,16 @@
 	- https://rubydoc.info/stdlib/core/Enumerable:each_cons
 
 For better clairty for updating readme I would have removed the bits that have been fixed and added a version number with bug/updates section. In this case since I am not using versions I have left them in original locations with comments.
+
+
+## UPDATES:
+	** version 3.0 **
+		* Three word sequence finder now accounts for all non accepted characters and returns output of seperate files with a space in the middle of outputs
+		* Tests are automatically run for efficency of the user and tester. this setting can be changed by reading the documentation listed above for this feature.
+		* Docker is now properly loaded correctly with the correct names for text files incase previously when running this feature was not working correctly
+		* I have added the partial solution and a complete solution for the pairing session during the panel interview for hopefully my new position with New Relic apart of the authentication and authorization team.
+		* Tests are now compact to easier read and understand purpose of what each test is testing
+		* I have added alternative solutions for the three word sequencer and made updates to my proposed solution even though the script is not encapsulated within the method this upholds rubys best practices for SRP(Single Responsibility Principles)
+		* Resources quick link now works properly, spelling mistakes will inevitably happen, I will correct them as I find them. Thank you for your paitence in working with me.
+
+		Added Bonus it was an absolute pleasure speaking with everyone on the team and not directly on the team associates today. Thank you to all of you for making it a wonderful experience and a really fun afternoon. I look forward to working with all of you.
