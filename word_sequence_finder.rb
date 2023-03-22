@@ -10,10 +10,6 @@ class WordSequenceFinder
   end
 
   def three_word_sequences
-		# changed for testing purposes instead of multiple double nested arrays changed to single nested arrays for easier readability
-		# @text.each_cons(3) do |sequence|
-		# 	@word_sequence_counts[sequence] = @word_sequence_counts.fetch(sequence, 0) + 1
-		# end
 		@word_sequence_counts = Hash.new(0)
 		(0..@text.length-3).each do |i|
     	sequence = "#{@text[i]} #{@text[i+1]} #{@text[i+2]}"
@@ -37,28 +33,6 @@ class WordSequenceFinder
 end
 
 time_start = Time.now
-# Before pair programming sessions
-=begin
-	if ARGV.empty?
-		puts "Error: No input was provided."
-		puts "Usage: ruby ./word_sequence_finder.rb <input_string>"
-		exit 1
-	elsif ARGV.length > 0
-		ARGV.each do |file_path|
-			input = open(file_path).read
-			puts "\nThe first 100 most common three word sequences for #{file_path}: "
-			finder = WordSequenceFinder.new(input)
-			finder.most_common_sequences
-		end
-	elsif
-		input = $stdin.read
-		finder = WordSequenceFinder.new(input)
-		puts "The first 100 most common three word sequences for: "
-		finder.most_common_sequences
-	end
-=end
-
-# AFTER Pair programming sessions
 if ARGV.empty?
 	puts "Please enter some text to search (press Ctrl+D when done):"
 	input = $stdin.read
